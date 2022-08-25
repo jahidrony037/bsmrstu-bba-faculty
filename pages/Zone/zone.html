@@ -15,7 +15,8 @@
     <div class="flex justify-between lg:space-x-[36px] lg:p-5 overflow-hidden">
         <i onclick="nav()" id="icon"
             class="fa fa-bars absolute right-1 cursor-pointer text-2xl mr-2 mt-2 z-30 lg:hidden" aria-hidden="true"></i>
-        <div id="nav_slide" class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[770px] lg:h-auto  lg:relative lg:ml-0 lg:w-[253px]">
+        <div id="nav_slide"
+            class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[770px] lg:h-auto  lg:relative lg:ml-0 lg:w-[253px]">
             <div class="avater_nav bg-[#FF8C40] p-2 flex justify-between">
                 <h1 class="text-xl text-white">Admin Zone</h1>
 
@@ -38,33 +39,65 @@
                 </ul>
             </div>
         </div>
-        <div id="2nd_div" class="w-[100%] mt-4 lg:mt-0 lg:w-[724px]">
+        <div id="2nd_div" class="w-[100%] mt-4 lg:mt-0 lg:w-[724px] space-y-[29px]">
             <div class="searchBr w-[724px]">
                 <div class="bg-[#E2E2E2] p-4 text-center space-y-2">
                     <div class="text-[#3E3E3E] text-sm lg:text-[40px] font-semibold">Name of the Office</div>
                     <div class="text-[23px]">Friday 05-08-22</div>
                 </div>
-                <!-- <div class="bg-[#C9F4FA] p-2 w-[49%] lg:w-[49%] flex items-center">
-                    <input class="focus:outline-none w-32 h-12 bg-[#C9F4FA]" placeholder="Search" type="text">
-                </div> -->
             </div>
             <div class="content mt-2 grid gap-[33px] grid-cols-2 md:grid-cols-4 ">
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
-                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex items-center justify-center"><i class="fa-solid fa-list text-5xl"></i></div>
+                <div
+                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex flex-col justify-center text-center text-[19px] font-semibold">
+                    <i class="fa-solid fa-list text-5xl"></i>
+                    <div>Admission</div>
+                </div>
+                <div
+                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex flex-col justify-center text-center text-[19px] font-semibold">
+                    <i class="fa-solid fa-money-check-dollar text-5xl"></i>
+                    <div>Registration</div>
+                </div>
+                <div
+                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex flex-col justify-center text-center text-[19px] font-semibold">
+                    <!-- <i class="fa-solid fa-list text-5xl"></i> -->
+                    <i class="fa-solid fa-building-columns text-5xl"></i>
+                    <div>Class/Program</div>
+                </div>
+                <div
+                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex flex-col justify-center text-center text-[19px] font-semibold">
+                    <i class="fa-brands fa-paypal text-5xl"></i>
+                    <div>Pay</div>
+                </div>
+                <div
+                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex flex-col justify-center text-center text-[19px] font-semibold">
+                    <i class="fa-solid fa-list text-5xl"></i>
+                    <div>Admission</div>
+                </div>
+                <div
+                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex flex-col justify-center text-center text-[19px] font-semibold">
+                    <i class="fa-solid fa-house text-5xl"></i>
+                    <div>Assignments</div>
+                </div>
+                <div
+                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex flex-col justify-center text-center text-[19px] font-semibold">
+                    <i class="fa-solid fa-hand-pointer text-5xl"></i>
+                    <div>Report</div>
+                </div>
+                <div
+                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] flex flex-col justify-center text-center text-[19px] font-semibold">
+                    <i class="fa-solid fa-book-open text-5xl"></i>
+                    <div>Resourses</div>
+                </div>
+            </div>
+            <div class="bg-[#E2E2E2] h-[185px]">
+                <div class="h-[35px] bg-[#3E3E3E] text-center text-[19px] font-semibold text-white">
+                    Notice Board
+                </div>
             </div>
         </div>
         <div class="absolute -top-[1000px] lg:top-0 lg:relative space-y-[12px] lg:w-[253px] bg-[#ffffff]">
-            <div class="nav bg-[#FF8C40] hover:bg-[#F3482C] h-[50px] text-white font-semibold flex justify-between items-center box-border p-2">
+            <div
+                class="nav bg-[#FF8C40] hover:bg-[#F3482C] h-[50px] text-white font-semibold flex justify-between items-center box-border p-2">
                 <h1>My Account</h1>
                 <img class="w-[40px] h-[40px] rounded-full" src="../../images/J-Sir.png" alt="">
             </div>
