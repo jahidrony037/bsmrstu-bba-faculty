@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+
+    .style {
+
+        clip-path: circle(0.5% at 0 50%);
+        transition: 2s;
+        transition-property: clip-path;
+
+    }
+
+    .style1 {
+
+        clip-path: circle(150% at 0 50%);
+        transition: 1s;
+        transition-property: clip-path;
+
+    }
+
+    .btn {
+        @apply bg-red-800;
+    }
+
+}
