@@ -39,20 +39,13 @@
                 </ul>
             </div>
         </div>
-        <div id="2nd_div" class="w-[100%] mt-4 lg:mt-0 lg:w-[724px]">
-            <div class="searchBr w-[724px]">
-                <div class="bg-[#E2E2E2] p-4 text-center space-y-2">
-                    <div class="text-[#3E3E3E] text-sm lg:text-[40px] font-semibold">Name of the Office</div>
-                    <div class="text-[23px]">Friday 05-08-22</div>
-                </div>
-                <!-- <div class="bg-[#C9F4FA] p-2 w-[49%] lg:w-[49%] flex items-center">
-                    <input class="focus:outline-none w-32 h-12 bg-[#C9F4FA]" placeholder="Search" type="text">
-                </div> -->
+        <div id="2nd_div" class="w-[100%] lg:mt-0 lg:w-[724px]">
+            <div class="bg-[#E2E2E2] p-4 text-center space-y-2">
+                <div class="text-[#3E3E3E] text-[25px] lg:text-[40px] font-semibold">Name of the Office</div>
+                <div class="text-[23px]">Friday 05-08-22</div>
             </div>
-            <div class="content mt-2 grid gap-[33px] grid-cols-2 md:grid-cols-4 ">
-                
-                <div
-                    class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] text-center p">
+            <div class="content mt-2 grid gap-[22px] lg:gap-[33px] justify-items-center grid-cols-2 md:grid-cols-4 ">
+                <div class="bg-[#E2E2E2] hover:bg-[#FF8C40] cursor-pointer w-[156px] h-[156px] text-center p">
                     <i class="fa-solid fa-list text-5xl mt-10"></i>
                     <p>MBA(Reg)</p>
                 </div>
@@ -94,16 +87,13 @@
         function nav() {
             let icon = document.getElementById("icon").classList.contains("fa-bars");
             document.getElementById("nav_slide").classList.add("duration-1000");
-            // document.getElementById("2nd_div").classList.add("duration-1000");
             if (icon) {
                 document.getElementById("icon").classList.replace("fa-bars", "fa-times");
                 document.getElementById("nav_slide").classList.remove("-ml-[770px]");
-                // document.getElementById("2nd_div").classList.replace("w-[100%]", "w-[0%]");
             }
             else {
                 document.getElementById("nav_slide").classList.add("-ml-[770px]");
                 document.getElementById("icon").classList.replace("fa-times", "fa-bars");
-                // document.getElementById("2nd_div").classList.replace("w-[0%]", "w-[100%]");
             }
         }
     </script>
