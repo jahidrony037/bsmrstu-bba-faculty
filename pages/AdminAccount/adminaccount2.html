@@ -10,7 +10,7 @@
       src="https://kit.fontawesome.com/5507de1efb.js"
       crossorigin="anonymous"
     ></script>
-    <title>Dashboard</title>
+    <title>adminAccount2</title>
   </head>
 
   <body>
@@ -18,12 +18,12 @@
       <i
         onclick="nav()"
         id="icon"
-        class="fa fa-bars absolute right-1 cursor-pointer text-2xl mr-2 mt-2 z-40 lg:hidden"
+        class="fa fa-bars absolute right-1 cursor-pointer text-2xl mr-2 mt-2 z-30 lg:hidden"
         aria-hidden="true"
       ></i>
       <div
         id="nav_slide"
-        class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[770px] lg:h-auto lg:relative lg:ml-0 lg:w-[253px] z-30"
+        class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[770px] lg:h-auto lg:relative lg:ml-0 lg:w-[253px]"
       >
         <div class="avater_nav bg-[#FF8C40] p-2 flex justify-between">
           <h1 class="text-xl text-white">Admin Zone</h1>
@@ -67,12 +67,13 @@
           </ul>
         </div>
       </div>
-      <div id="2nd_div" class="w-[100%] lg:mt-0 space-y-[19px] lg:w-[724px]">
+      <div
+        id="2nd_div"
+        class="w-[100%] mt-4 lg:mt-0 space-y-[19px] lg:w-[724px]"
+      >
         <div class="searchBr w-full">
           <div class="bg-[#E2E2E2] p-4 text-center space-y-2">
-            <div
-              class="text-[#3E3E3E] text-[25px] md:text-[33px] lg:text-[40px] font-semibold"
-            >
+            <div class="text-[#3E3E3E] text-sm lg:text-[40px] font-semibold">
               Name of the Office
             </div>
             <div class="text-[23px]">Friday 05-08-22</div>
@@ -85,7 +86,14 @@
             Fee Schedule
           </div>
           <div class="">
-            <ul class="relative space-y-[15px] lg:p-0 p-2">
+            <ul class="relative space-y-[15px]">
+              <div class="flex flex-row">
+                <li class="flex justify-between w-[245px]">
+                  <span class="font-bold">Name of the Faculty*</span
+                  ><span>:</span>
+                </li>
+                <input type="text" class="focus:outline-none px-[2px]" />
+              </div>
               <div class="flex flex-row">
                 <li class="flex justify-between w-[245px]">
                   <span>Name of the Department*</span><span>:</span>
@@ -94,53 +102,51 @@
               </div>
               <div class="flex flex-row">
                 <li class="flex justify-between w-[245px]">
-                  <span>Account Number/Code*</span><span>:</span>
+                  <span>Abbreviation of the Department*</span><span>:</span>
                 </li>
                 <input type="text" class="focus:outline-none px-[2px]" />
               </div>
               <div class="flex flex-row">
                 <li class="flex justify-between w-[245px]">
-                  <span>Class/Program*</span><span>:</span>
+                  <span>Contact Number*</span><span>:</span>
                 </li>
                 <input type="text" class="focus:outline-none px-[2px]" />
               </div>
               <div class="flex flex-row">
                 <li class="flex justify-between w-[245px]">
-                  <span>Fee Code*</span><span>:</span>
+                  <span>Address*</span><span>:</span>
+                </li>
+                <input type="text" class="focus:outline-none px-[2px]" />
+              </div>
+              <div class="absolute left-[450px] top-[60px] flex flex-row">
+                <li class="flex justify-between w-[150px]">
+                  <span>Department Code*</span><span>:</span>
                 </li>
                 <input
                   type="text"
-                  class="focus:outline-none lg:w-[116px] px-[2px]"
+                  class="focus:outline-none w-[120px] px-[2px]"
                 />
               </div>
-              <div class="flex flex-row">
-                <li
-                  class="relative lg:absolute lg:left-[362px] lg:top-[99px] flex justify-between w-[245px] lg:w-[200px]"
-                >
-                  <span>Fee Amount(Semi Annual)*</span><span>:</span>
+              <div class="absolute left-[450px] top-[99px] flex flex-row">
+                <li class="flex justify-between w-[150px]">
+                  <span>Email*</span><span>:</span>
                 </li>
                 <input
                   type="text"
-                  class="lg:absolute lg:left-[562px] lg:top-[99px] focus:outline-none lg:w-[116px] px-[2px]"
+                  class="focus:outline-none w-[120px] px-[2px]"
                 />
-              </div>
-              <div class="flex flex-row">
-                <li class="flex justify-between w-[245px]">
-                  <span>Fee Title*</span><span>:</span>
-                </li>
-                <input type="text" class="focus:outline-none px-[2px]" />
               </div>
             </ul>
           </div>
           <div
-            class="lg:flex lg:flex-row lg:justify-between lg:space-y-[0px] lg:space-x-[8px] lg:text-[20px] font-['Segoe UI'] flex-col space-y-[15px]"
+            class="flex justify-between space-x-[8px] text-[20px] font-['Segoe UI']"
           >
-            <div class="1st lg:w-[164px] w-full">
+            <div class="1st w-[180px]">
               <ul class="space-y-[9px]">
                 <li
-                  class="bg-[#3E3E3E] h-[33px] flex items-center justify-center text-white"
+                  class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
                 >
-                  Fee Code
+                  Dept. Code
                 </li>
                 <li
                   class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
@@ -162,43 +168,87 @@
                 >
                   104
                 </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  105
+                </li>
               </ul>
             </div>
-            <div class="2nd lg:w-[389px] w-full">
-              <ul class="space-y-[9px] text-center">
+            <div class="2nd w-[150px]">
+              <ul class="space-y-[9px]">
                 <li
-                  class="bg-[#3E3E3E] h-[33px] lg:flex lg:items-center lg:px-[34px] lg:box-border text-white"
+                  class="bg-[#3E3E3E] h-[33px] flex items-center justify-center font-bold px-[34px] box-border text-white"
                 >
-                  Fee Title
+                  Abbreviation
                 </li>
                 <li
-                  class="bg-[#E2E2E2] h-[33px] lg:flex lg:items-center lg:px-[34px] lg:box-border"
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center px-[34px] box-border"
                 >
                   A
                 </li>
                 <li
-                  class="bg-[#FFE1CE] h-[33px] lg:flex lg:items-center lg:px-[34px] lg:box-border"
+                  class="bg-[#FFE1CE] h-[33px] flex items-center justify-center px-[34px] box-border"
                 >
                   B
                 </li>
                 <li
-                  class="bg-[#E2E2E2] h-[33px] lg:flex lg:items-center lg:px-[34px] lg:box-border"
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center px-[34px] box-border"
                 >
                   C
                 </li>
                 <li
-                  class="bg-[#FFE1CE] h-[33px] lg:flex lg:items-center lg:px-[34px] lg:box-border"
+                  class="bg-[#FFE1CE] h-[33px] flex items-center justify-center px-[34px] box-border"
                 >
                   D
                 </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center px-[34px] box-border"
+                >
+                  E
+                </li>
               </ul>
             </div>
-            <div class="3rd lg:w-[164px] w-full">
+            <div class="3rd w-[180px]">
               <ul class="space-y-[9px]">
                 <li
-                  class="bg-[#3E3E3E] h-[33px] flex items-center justify-center text-white"
+                  class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
                 >
-                  Amount
+                  Dept. Name
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  A
+                </li>
+                <li
+                  class="bg-[#FFE1CE] h-[33px] flex items-center justify-center"
+                >
+                  B
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  C
+                </li>
+                <li
+                  class="bg-[#FFE1CE] h-[33px] flex items-center justify-center"
+                >
+                  D
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  E
+                </li>
+              </ul>
+            </div>
+            <div class="4th w-[140px]">
+              <ul class="space-y-[9px]">
+                <li
+                  class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
+                >
+                  eMail
                 </li>
                 <li
                   class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
@@ -219,6 +269,79 @@
                   class="bg-[#FFE1CE] h-[33px] flex items-center justify-center"
                 >
                   400
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  500
+                </li>
+              </ul>
+            </div>
+            <div class="5th w-[180px]">
+              <ul class="space-y-[9px]">
+                <li
+                  class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
+                >
+                  Contact No
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  100
+                </li>
+                <li
+                  class="bg-[#FFE1CE] h-[33px] flex items-center justify-center"
+                >
+                  200
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  300
+                </li>
+                <li
+                  class="bg-[#FFE1CE] h-[33px] flex items-center justify-center"
+                >
+                  400
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  500
+                </li>
+              </ul>
+            </div>
+            <div class="6th w-[170px]">
+              <ul class="space-y-[9px]">
+                <li
+                  class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
+                >
+                  Address
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  M
+                </li>
+                <li
+                  class="bg-[#FFE1CE] h-[33px] flex items-center justify-center"
+                >
+                  N
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  O
+                </li>
+                <li
+                  class="bg-[#FFE1CE] h-[33px] flex items-center justify-center"
+                >
+                  P
+                </li>
+                <li
+                  class="bg-[#E2E2E2] h-[33px] flex items-center justify-center"
+                >
+                  Q
                 </li>
               </ul>
             </div>
