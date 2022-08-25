@@ -18,12 +18,12 @@
       <i
         onclick="nav()"
         id="icon"
-        class="fa fa-bars absolute right-1 cursor-pointer text-2xl mr-2 mt-2 z-30 lg:hidden"
+        class="fa fa-bars absolute right-1 cursor-pointer text-2xl mr-2 mt-2 z-40 lg:hidden"
         aria-hidden="true"
       ></i>
       <div
         id="nav_slide"
-        class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[770px] lg:h-auto lg:relative lg:ml-0 lg:w-[253px]"
+        class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[820px] lg:h-auto lg:relative lg:ml-0 lg:w-[253px] z-30"
       >
         <div class="avater_nav bg-[#FF8C40] p-2 flex justify-between">
           <h1 class="text-xl text-white">Admin Zone</h1>
@@ -67,23 +67,20 @@
           </ul>
         </div>
       </div>
-      <div
-        id="2nd_div"
-        class="w-[100%] mt-4 lg:mt-0 space-y-[19px] lg:w-[724px]"
-      >
-        <div class="searchBr w-full">
+      <div id="2nd_div" class="w-[100%] lg:mt-0 space-y-[19px] lg:w-[724px]">
+        <div class="lg:searchBr lg:w-full">
           <div class="bg-[#E2E2E2] lg:p-4 text-center lg:space-y-2">
             <div
               class="text-[#3E3E3E] text-[25px] lg:text-[40px] font-semibold"
             >
               Name of the Office
             </div>
-            <div class="text-[23px]">Friday 05-08-22</div>
+            <div class="lg:text-[23px] text-[16px]">Friday 05-08-22</div>
           </div>
         </div>
         <div class="content w-full space-y-[19px]">
           <div
-            class="bg-[#3E3E3E] text-white text-[23px] font-semibold h-[50px] flex items-center justify-center"
+            class="bg-[#3E3E3E] text-white lg:text-[23px] text-[18px] font-semibold h-[50px] flex items-center justify-center"
           >
             Programs
           </div>
@@ -111,20 +108,17 @@
                 <li class="flex justify-between w-[245px]">
                   <span>Account Code*</span><span>:</span>
                 </li>
-                <input
-                  type="text"
-                  class="focus:outline-none w-[116px] px-[2px]"
-                />
+                <input type="text" class="focus:outline-none px-[2px]" />
               </div>
               <div class="flex flex-row">
                 <li
-                  class="absolute left-[362px] top-[118px] flex justify-between w-[200px]"
+                  class="lg:absolute lg:left-[362px] lg:top-[118px] flex justify-between lg:w-[200px] w-[245px]"
                 >
                   <span>Account Number*</span><span>:</span>
                 </li>
                 <input
                   type="text"
-                  class="absolute left-[562px] top-[118px] focus:outline-none w-[116px] px-[2px]"
+                  class="lg:absolute left-[562px] top-[118px] focus:outline-none px-[2px]"
                 />
               </div>
               <div class="flex flex-row">
@@ -136,9 +130,9 @@
             </ul>
           </div>
           <div
-            class="flex justify-between space-x-[8px] text-[15px] font-['Segoe UI']"
+            class="flex lg:flex-row lg:justify-between lg:space-x-[8px] lg:text-[15px] font-['Segoe UI'] flex-col items-center gap-4"
           >
-            <div class="1st w-[200px]">
+            <div class="1st lg:w-[200px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] flex items-center justify-center text-white"
@@ -167,36 +161,36 @@
                 </li>
               </ul>
             </div>
-            <div class="2nd w-[280px]">
+            <div class="2nd lg:w-[280px] w-full">
               <ul class="space-y-[9px]">
                 <li
-                  class="bg-[#3E3E3E] h-[33px] flex items-center px-[34px] box-border text-white"
+                  class="bg-[#3E3E3E] h-[33px] flex lg:items-center justify-center px-[32px] box-border text-white"
                 >
                   Account Type
                 </li>
                 <li
-                  class="bg-[#E2E2E2] h-[33px] flex items-center px-[34px] box-border"
+                  class="bg-[#E2E2E2] h-[33px] flex lg:items-center justify-center px-[34px] box-border"
                 >
                   A
                 </li>
                 <li
-                  class="bg-[#FFE1CE] h-[33px] flex items-center px-[34px] box-border"
+                  class="bg-[#FFE1CE] h-[33px] flex lg:items-center justify-center px-[34px] box-border"
                 >
                   B
                 </li>
                 <li
-                  class="bg-[#E2E2E2] h-[33px] flex items-center px-[34px] box-border"
+                  class="bg-[#E2E2E2] h-[33px] flex lg:items-center justify-center px-[34px] box-border"
                 >
                   C
                 </li>
                 <li
-                  class="bg-[#FFE1CE] h-[33px] flex items-center px-[34px] box-border"
+                  class="bg-[#FFE1CE] h-[33px] flex lg:items-center justify-center px-[34px] box-border"
                 >
                   D
                 </li>
               </ul>
             </div>
-            <div class="3rd w-[200px]">
+            <div class="3rd lg:w-[200px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] flex items-center justify-center text-white"
@@ -225,7 +219,7 @@
                 </li>
               </ul>
             </div>
-            <div class="4th w-[300px]">
+            <div class="4th lg:w-[300px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] flex items-center justify-center text-white"
@@ -254,7 +248,7 @@
                 </li>
               </ul>
             </div>
-            <div class="3rd w-[164px]">
+            <div class="5th lg:w-[164px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] flex items-center justify-center text-white"
@@ -285,7 +279,7 @@
             </div>
           </div>
           <div
-            class="flex justify-end space-x-[8px] text-white text-[20px] font-semibold"
+            class="flex lg:justify-end justify-between space-x-[8px] text-white text-[20px] font-semibold"
           >
             <span
               class="w-[164px] h-[33px] flex items-center justify-center bg-[#3E3E3E] cursor-pointer"
@@ -334,10 +328,10 @@
           document
             .getElementById("icon")
             .classList.replace("fa-bars", "fa-times");
-          document.getElementById("nav_slide").classList.remove("-ml-[770px]");
+          document.getElementById("nav_slide").classList.remove("-ml-[820px]");
           // document.getElementById("2nd_div").classList.replace("w-[100%]", "w-[0%]");
         } else {
-          document.getElementById("nav_slide").classList.add("-ml-[770px]");
+          document.getElementById("nav_slide").classList.add("-ml-[820px]");
           document
             .getElementById("icon")
             .classList.replace("fa-times", "fa-bars");
