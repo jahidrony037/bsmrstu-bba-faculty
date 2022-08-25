@@ -18,12 +18,12 @@
       <i
         onclick="nav()"
         id="icon"
-        class="fa fa-bars absolute right-1 cursor-pointer text-2xl mr-2 mt-2 z-30 lg:hidden"
+        class="fa fa-bars absolute right-1 cursor-pointer text-2xl mr-2 mt-2 z-40 lg:hidden"
         aria-hidden="true"
       ></i>
       <div
         id="nav_slide"
-        class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[770px] lg:h-auto lg:relative lg:ml-0 lg:w-[253px]"
+        class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[820px] lg:h-auto lg:relative lg:ml-0 lg:w-[253px] z-30"
       >
         <div class="avater_nav bg-[#FF8C40] p-2 flex justify-between">
           <h1 class="text-xl text-white">Admin Zone</h1>
@@ -67,13 +67,12 @@
           </ul>
         </div>
       </div>
-      <div
-        id="2nd_div"
-        class="w-[100%] mt-4 lg:mt-0 space-y-[19px] lg:w-[724px]"
-      >
+      <div id="2nd_div" class="w-[100%] lg:mt-4 space-y-[19px] lg:w-[724px]">
         <div class="searchBr w-full">
           <div class="bg-[#E2E2E2] p-4 text-center space-y-2">
-            <div class="text-[#3E3E3E] text-sm lg:text-[40px] font-semibold">
+            <div
+              class="text-[#3E3E3E] text-[28px] lg:text-[40px] font-semibold"
+            >
               Name of the Office
             </div>
             <div class="text-[23px]">Friday 05-08-22</div>
@@ -118,30 +117,34 @@
                 </li>
                 <input type="text" class="focus:outline-none px-[2px]" />
               </div>
-              <div class="absolute left-[450px] top-[60px] flex flex-row">
-                <li class="flex justify-between w-[150px]">
+              <div
+                class="lg:absolute lg:left-[450px] lg:top-[60px] flex flex-row"
+              >
+                <li class="flex justify-between lg:w-[150px] w-[245px]">
                   <span>Department Code*</span><span>:</span>
                 </li>
                 <input
                   type="text"
-                  class="focus:outline-none w-[120px] px-[2px]"
+                  class="focus:outline-none lg:w-[120px] px-[2px]"
                 />
               </div>
-              <div class="absolute left-[450px] top-[99px] flex flex-row">
-                <li class="flex justify-between w-[150px]">
+              <div
+                class="lg:absolute lg:left-[450px] lg:top-[99px] flex flex-row"
+              >
+                <li class="flex justify-between lg:w-[150px] w-[245px]">
                   <span>Email*</span><span>:</span>
                 </li>
                 <input
                   type="text"
-                  class="focus:outline-none w-[120px] px-[2px]"
+                  class="focus:outline-none lg:w-[120px] px-[2px]"
                 />
               </div>
             </ul>
           </div>
           <div
-            class="flex justify-between space-x-[8px] text-[20px] font-['Segoe UI']"
+            class="flex flex-col items-center space-y-8 lg:space-y-0 lg:flex-row lg:justify-between space-x-[8px] text-[20px] font-['Segoe UI']"
           >
-            <div class="1st w-[180px]">
+            <div class="1st lg:w-[180px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
@@ -175,7 +178,7 @@
                 </li>
               </ul>
             </div>
-            <div class="2nd w-[150px]">
+            <div class="2nd lg:w-[150px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] flex items-center justify-center font-bold px-[34px] box-border text-white"
@@ -209,7 +212,7 @@
                 </li>
               </ul>
             </div>
-            <div class="3rd w-[180px]">
+            <div class="3rd lg:w-[180px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
@@ -243,7 +246,7 @@
                 </li>
               </ul>
             </div>
-            <div class="4th w-[140px]">
+            <div class="4th lg:w-[140px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
@@ -277,7 +280,7 @@
                 </li>
               </ul>
             </div>
-            <div class="5th w-[180px]">
+            <div class="5th lg:w-[180px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
@@ -311,7 +314,7 @@
                 </li>
               </ul>
             </div>
-            <div class="6th w-[170px]">
+            <div class="6th lg:w-[170px] w-full">
               <ul class="space-y-[9px]">
                 <li
                   class="bg-[#3E3E3E] h-[33px] font-bold flex items-center justify-center text-white"
@@ -347,7 +350,7 @@
             </div>
           </div>
           <div
-            class="flex justify-end space-x-[8px] text-white text-[20px] font-semibold"
+            class="flex lg:justify-end justify-between space-x-[8px] text-white text-[20px] font-semibold"
           >
             <span
               class="w-[164px] h-[33px] flex items-center justify-center bg-[#3E3E3E] cursor-pointer"
@@ -396,10 +399,10 @@
           document
             .getElementById("icon")
             .classList.replace("fa-bars", "fa-times");
-          document.getElementById("nav_slide").classList.remove("-ml-[770px]");
+          document.getElementById("nav_slide").classList.remove("-ml-[820px]");
           // document.getElementById("2nd_div").classList.replace("w-[100%]", "w-[0%]");
         } else {
-          document.getElementById("nav_slide").classList.add("-ml-[770px]");
+          document.getElementById("nav_slide").classList.add("-ml-[820px]");
           document
             .getElementById("icon")
             .classList.replace("fa-times", "fa-bars");
