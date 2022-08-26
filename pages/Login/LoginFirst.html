@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- import  LoginFirst css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/LoginFirst.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- <link rel="stylesheet" href="../../main.css"> -->
@@ -61,6 +62,8 @@
       <div class="2xl:mt-[120px] space-y-[43px]">
         <div
           class="text text-center mt-[256px] lg:mt-0 text-[25px] lg:mx-auto lg:w-[660px] lg:text-[50px] 2xl:w-[739px] 2xl:text-[56px] font-['Segoe UI'] font-bold text-[#3E3E3E]"
+          data-aos="fade-up"
+          data-aos-duration="3000"
         >
           One account for everything.
         </div>
@@ -78,8 +81,7 @@
         <img
           src="../../images/Path1.png"
           class="absolute lg:w-[570.75px] lg:h-[429.87px] 2xl:w-[600px] lg:-bottom-2 lg:-left-3"
-          alt=""
-        />
+          alt=""/>
         <img
           src="../../images/Ellipse 1.png"
           class="absolute lg:w-[153.24px] lg:h-[153.46px] lg:left-[112.2px] 2xl:w-[130px] 2xl:left-[120px] lg:bottom-[82.5px]"
@@ -117,6 +119,10 @@
         />
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       function nav() {
         let icon = document.getElementById("icon").classList.contains("fa-bars");
