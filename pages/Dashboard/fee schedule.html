@@ -21,53 +21,31 @@
         class="fa fa-bars absolute right-1 cursor-pointer text-2xl mr-2 mt-2 z-40 lg:hidden"
         aria-hidden="true"
       ></i>
-      <div
-        id="nav_slide"
-        class="w-[100%] absolute bg-[#E2E2E2] h-[100rem] -ml-[820px] lg:h-auto lg:relative lg:ml-0 lg:w-[253px] z-30"
-      >
+      <div id="nav_slide"
+        class="w-[100%] absolute bg-[#E2E2E2] h-[100vh] -ml-[820px] lg:h-auto  lg:relative lg:ml-0 lg:w-[253px] z-30">
         <div class="avater_nav bg-[#FF8C40] p-2 flex justify-between">
           <h1 class="text-xl text-white">Admin Zone</h1>
+      
         </div>
-        <div class="avatar h-[200px] flex items-center justify-center flex-col">
-          <img
-            class="w-[100px] h-[100px] rounded-full"
-            src="../../images/J-Sir.png"
-            alt=""
-            srcset=""
-          />
+        <div class="avatar  h-[200px] flex items-center justify-center flex-col">
+          <img class="w-[100px] h-[100px] rounded-full" src="../../images/J-Sir.png" alt="" srcset="">
           <h1>Your FullName</h1>
           <h1>Your you@gmail.com</h1>
         </div>
-        <div class="h-[100%]">
+        <div>
           <ul>
-            <li class="bg-[#FF8C40] text-white h-14 hover:bg-[#F3482C] c p-2">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="bg-[#3E3E3E] text-white h-14 hover:bg-[#F3482C] c p-2">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="bg-[#FF8C40] text-white h-14 hover:bg-[#F3482C] c p-2">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="bg-[#3E3E3E] text-white h-14 hover:bg-[#F3482C] c p-2">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="bg-[#FF8C40] text-white h-14 hover:bg-[#F3482C] c p-2">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="bg-[#3E3E3E] text-white h-14 hover:bg-[#F3482C] c p-2">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="bg-[#FF8C40] text-white h-14 hover:bg-[#F3482C] c p-2">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="bg-[#3E3E3E] text-white h-14 hover:bg-[#F3482C] c p-2">
-              <a href="#">Log out</a>
-            </li>
+            <li class="bg-[#FF8C40] text-white h-14 hover:bg-[#F3482C] c p-2"><a href="#">Dashboard</a></li>
+            <li class="bg-[#3E3E3E] text-white h-14 hover:bg-[#F3482C] c p-2"><a href="#">Dashboard</a></li>
+            <li class="bg-[#FF8C40] text-white h-14 hover:bg-[#F3482C] c p-2"><a href="#">Dashboard</a></li>
+            <li class="bg-[#3E3E3E] text-white h-14 hover:bg-[#F3482C] c p-2"><a href="#">Dashboard</a></li>
+            <li class="bg-[#FF8C40] text-white h-14 hover:bg-[#F3482C] c p-2"><a href="#">Dashboard</a></li>
+            <li class="bg-[#3E3E3E] text-white h-14 hover:bg-[#F3482C] c p-2"><a href="#">Dashboard</a></li>
+            <li class="bg-[#FF8C40] text-white h-14 hover:bg-[#F3482C] c p-2"><a href="#">Dashboard</a></li>
+            <li class="bg-[#3E3E3E] text-white h-14 hover:bg-[#F3482C] c p-2"><a href="#">Log out</a></li>
           </ul>
         </div>
       </div>
-      <div id="2nd_div" class="w-[100%] lg:mt-0 space-y-[19px] lg:w-[724px]">
+      <div id="2nd_div" class="w-[100%] lg:relative lg:mt-0 lg:space-y-[19px] lg:w-[724px] z-20">
         <div class="searchBr w-full">
           <div class="bg-[#E2E2E2] p-4 text-center space-y-2">
             <div
@@ -264,25 +242,20 @@
     </div>
     <script>
       function nav() {
-        let icon = document
-          .getElementById("icon")
-          .classList.contains("fa-bars");
-        document.getElementById("nav_slide").classList.add("duration-1000");
-        // document.getElementById("2nd_div").classList.add("duration-1000");
-        if (icon) {
-          document
-            .getElementById("icon")
-            .classList.replace("fa-bars", "fa-times");
-          document.getElementById("nav_slide").classList.remove("-ml-[820px]");
-          // document.getElementById("2nd_div").classList.replace("w-[100%]", "w-[0%]");
-        } else {
-          document.getElementById("nav_slide").classList.add("-ml-[820px]");
-          document
-            .getElementById("icon")
-            .classList.replace("fa-times", "fa-bars");
-          // document.getElementById("2nd_div").classList.replace("w-[0%]", "w-[100%]");
+          let icon = document.getElementById("icon").classList.contains("fa-bars");
+          document.getElementById("nav_slide").classList.add("duration-1000");
+          if (icon) {
+            document.getElementById("icon").classList.replace("fa-bars", "fa-times");
+            document.getElementById("nav_slide").classList.remove("-ml-[820px]");
+            document.getElementById("2nd_div").classList.add("fixed");
+
+
+          } else {
+            document.getElementById("nav_slide").classList.add("-ml-[820px]");
+            document.getElementById("icon").classList.replace("fa-times", "fa-bars");
+            document.getElementById("2nd_div").classList.remove("fixed");
+          }
         }
-      }
     </script>
   </body>
 </html>
